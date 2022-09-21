@@ -1,5 +1,8 @@
 import requests
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def main():
     respuesta = requests.get("https://api.apilayer.com/fixer/convert?to=EUR&from=USD&amount=1",
